@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+
+    --primary-100: #D2AB78;
+    --primary-150: #E6C9A8;
+    --primary-200: #eed9c4b9;
+
+    --rosa-100: #FF6F61;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Remove seta de input number */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  /* Para navegadores WebKit (Chrome, Edge, Safari) */
+  ::-webkit-scrollbar {
+    width: 6px;
+    /* Deixa o scrollbar fino */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #E6C9A8;
+    /* Bege mais escuro (pode ajustar conforme desejar) */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C9A67D;
+    /* Bege escuro para o "thumb" (a parte que desliza) */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B8926B;
+    /* Tom mais escuro ao passar o mouse */
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.4rem;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: var(--neutral-200);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--primary-900);
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-600);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-dots {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .absolute-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .border-base {
+    border: 1px solid var(--neutral-200);
+    border-radius: 0.5rem;
+  }
+
+  .cursor {
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+
+  .cursor:hover {
+    color: var(--primary-900);
+  }
+
+  .report-style-class {
+    height: 90vh !important;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
