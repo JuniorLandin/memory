@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { X } from "phosphor-react";
 import CarouselCardComponent from "../CarouselCardComponent";
 import { useEffect, useState } from "react";
+import { X } from "phosphor-react";
 
 interface CityModalProps {
   cityName: string;
@@ -31,7 +31,7 @@ export default function ModalComponents({ cityName, closeModal }: CityModalProps
       const response = await fetch("/data/memories.json");
       const data = await response.json();
 
-      const cityMemories = data.find((city: any) => city.cidade === cityName);
+      const cityMemories = data.find((city: MemoryCitys) => city.cidade === cityName);
 
       if (cityMemories) {
         setMemories(cityMemories);

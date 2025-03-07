@@ -1,7 +1,7 @@
 "use client"
 import { Memory } from "@/types/Memory";
 import { motion } from "framer-motion";
-import { CaretLeft, CaretRight, X } from "phosphor-react";
+import { CaretLeft, CaretRight } from "phosphor-react";
 import { useState } from "react";
 import CarouselImageComponent from "../CarouselImagesComponent";
 
@@ -46,7 +46,7 @@ export default function CarouselCardComponent({ memories, textCity }: { memories
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
           {paginatedItems[index] ? (
-            paginatedItems[index].map((item: any, i: any) => {
+            paginatedItems[index].map((item: Memory, i: number) => {
               return (
                 <div
                   key={i}
