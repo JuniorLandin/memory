@@ -21,7 +21,12 @@ export default function ThanksComponent() {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-xl text-center"
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt iusto labore quod nam tempora ipsam, dolores, odio deleniti aliquam sequi eos dolor aspernatur necessitatibus veniam repellat itaque consectetur quis earum!
+          Bom, Anna Vitória Fernandes Landin... Muito Obrigado por compartilhar a vida comigo, muito obrigado por me aceitar em sua vida!
+          Espero do fundo do meu coração te agradar cada vez mais. Quero concluir a vida com você, ter filhos, netos... Colecionar viagens e viajar o mundo ao seu lado.
+          Espero um dia conseguir ser o homem real provedor e que você somente cuide do nosso lar e da nossa familia. Eu te amo e te amarei cada dia mais.
+          Espero estar na eternidade juntamente com você, mas enquanto estamos aqui eu quero concluir a missão ao seu lado. Que possamos ir aos confins da terra
+          pregar a palavra do nosso Senhor e Salvador.
+          Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo. Ensinem-nos a obedecer a tudo o que eu lhes ordenei. E lembrem-se disto: estou sempre com vocês, até o fim dos tempos
         </motion.h1>
       </div>
     </div>

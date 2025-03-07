@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
 
       <div className="flex justify-center h-full w-full bg-primary-150">
-        <div className="flex flex-col h-full w-full max-w-7xl">
+        <div className="flex flex-col h-full w-full max-w-7xl mt-20">
           <div id="year">
             <YearComponent />
           </div>
